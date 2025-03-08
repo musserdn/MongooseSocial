@@ -23,7 +23,7 @@ It is designed to allow users to share thoughts, react to friends' posts, and ma
   7. Interact with each API route.
 
   ## [Usage](#usage)
-  Use this to add users, connect friends, manage thoughts, and allow reactions.  View a demo of the application here: [Youtube Demo Video]().
+  Use this to add users, connect friends, manage thoughts, and allow reactions.  View a demo of the application here: [Youtube Demo Video](https://youtu.be/RwGLElLoCmU).
   
   ### Application Screenshot
   ![Mongoose Social Screenshot](./Resources/mongooseSocial_SS.png)
