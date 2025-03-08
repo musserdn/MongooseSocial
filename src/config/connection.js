@@ -11,7 +11,7 @@ if (!MONGODB_URI) {
 
 const db = async () => {
     try {
-        await mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+        await mongoose.connect(MONGODB_URI);
         console.log('Database connected.');
         return mongoose.connection;
     } catch (error) {

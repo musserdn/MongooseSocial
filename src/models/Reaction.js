@@ -1,4 +1,5 @@
 import { Schema, Types } from 'mongoose';
+import { formatTimestamp } from '../utils/date.js';
 
 const reactionSchema = new Schema({
     reactionId: {
@@ -17,7 +18,7 @@ const reactionSchema = new Schema({
     createdAt: {
         type: Date,
         default: Date.now,
-        get: (timestamp) => new Date(timestamp).toLocaleString(),
+        get: formatTimestamp,
     },
 }, {
     timestamps: true,

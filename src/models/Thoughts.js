@@ -1,5 +1,6 @@
 import { Schema, model } from 'mongoose';
 import reactionSchema from './Reaction.js';
+import { formatTimestamp } from '../utils/date.js';
 
 const thoughtSchema = new Schema({
     thoughtText: {
@@ -11,7 +12,7 @@ const thoughtSchema = new Schema({
     createdAt: {
         type: Date,
         default: Date.now,
-        get: (timestamp) => new Date(timestamp).toLocaleString(),
+        get: formatTimestamp,
     },
     username: {
         type: String,

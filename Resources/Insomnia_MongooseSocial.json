@@ -1,0 +1,656 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2025-03-08T02:42:40.583Z",
+    "__export_source": "insomnia.desktop.app:v10.3.1",
+    "resources": [
+        {
+            "_id": "req_e981a85f8a294212af9779ced77e51c0",
+            "parentId": "fld_11246b3403b24dafb8d2108aff39a8f0",
+            "modified": 1741401239513,
+            "created": 1741399888714,
+            "url": "http://localhost:3001/api/users/:userId/friends/:friendId",
+            "name": "Add Friend",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_0991e2aebdd849059dd02f9b9aed9d93",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399874192,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": "67cbabfd782d856dae20563a"
+                },
+                {
+                    "name": "friendId",
+                    "value": "67cbac0e782d856dae205640"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_11246b3403b24dafb8d2108aff39a8f0",
+            "parentId": "wrk_7452b687e861408a9005f4e684ad802c",
+            "modified": 1741400100576,
+            "created": 1741399867699,
+            "name": "Friends",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1741400096756,
+            "environmentType": "kv",
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_7452b687e861408a9005f4e684ad802c",
+            "parentId": null,
+            "modified": 1741399823497,
+            "created": 1741399823497,
+            "name": "MongooseSocial",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_fd0cc0c4cc7648d89bdf30264f28c411",
+            "parentId": "fld_11246b3403b24dafb8d2108aff39a8f0",
+            "modified": 1741401261282,
+            "created": 1741399870656,
+            "url": "http://localhost:3001/api/users/:userId/friends/:friendId",
+            "name": "Remove Friend",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_88a7938aaa484dba99cd6395962eb2f9",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "description": "",
+                    "disabled": false
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399874092,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": "67cbabfd782d856dae20563a"
+                },
+                {
+                    "name": "friendId",
+                    "value": "67cbac0e782d856dae205640"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_16f3bab23df444ea989e9430f01e047c",
+            "parentId": "fld_9d076cd4629c4fcf9ae7c49e9a08136b",
+            "modified": 1741401079811,
+            "created": 1741399987614,
+            "url": "http://localhost:3001/api/users",
+            "name": "Find all Users",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_faac8bf365a341f8a81c70d7e936168d"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399990286,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_9d076cd4629c4fcf9ae7c49e9a08136b",
+            "parentId": "fld_11246b3403b24dafb8d2108aff39a8f0",
+            "modified": 1741400102889,
+            "created": 1741399925280,
+            "name": "Users",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1741399873892,
+            "environmentType": "kv",
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_8cd56f718a1442d6a8b6356b9bef83b9",
+            "parentId": "fld_9d076cd4629c4fcf9ae7c49e9a08136b",
+            "modified": 1741401180781,
+            "created": 1741399974040,
+            "url": "http://localhost:3001/api/users/:userId",
+            "name": "Find User by ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_d24715bf1b5d43548b5d1400d196e3b6"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399990236,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": "67cbabfd782d856dae20563a"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_084943170fe74e67b9b7c1a638ba6675",
+            "parentId": "fld_9d076cd4629c4fcf9ae7c49e9a08136b",
+            "modified": 1741401077602,
+            "created": 1741399964708,
+            "url": "http://localhost:3001/api/users",
+            "name": "Create User",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"username\": \"lernantino\",\n  \"email\": \"lernantino@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399990211,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_cd40e392d4f4491fbaa26735aadca884",
+            "parentId": "fld_9d076cd4629c4fcf9ae7c49e9a08136b",
+            "modified": 1741401093798,
+            "created": 1741399983752,
+            "url": "http://localhost:3001/api/users",
+            "name": "Create second User",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"username\": \"Dan Musser\",\n  \"email\": \"musser@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399990198.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_768d2d4b6da7493bb9d0bf1e5ea6b0f6",
+            "parentId": "fld_9d076cd4629c4fcf9ae7c49e9a08136b",
+            "modified": 1741401101423,
+            "created": 1741400066241,
+            "url": "http://localhost:3001/api/users",
+            "name": "Create third User",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"username\": \"Best Coder\",\n  \"email\": \"coding@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399990192.25,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_189f9155d068472f9dc08c7b0c220b7a",
+            "parentId": "fld_9d076cd4629c4fcf9ae7c49e9a08136b",
+            "modified": 1741401163470,
+            "created": 1741399988917,
+            "url": "http://localhost:3001/api/users/:userId",
+            "name": "Update User",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"username\": \"I'm Updated\",\n  \"email\": \"updated@gmail.com\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399990189.125,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": "67cbac0e782d856dae205640"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d5583f90ad904a7cad38302cd08bd159",
+            "parentId": "fld_9d076cd4629c4fcf9ae7c49e9a08136b",
+            "modified": 1741401293272,
+            "created": 1741399990186,
+            "url": "http://localhost:3001/api/users/:userId",
+            "name": "Delete User",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_b0fdfb5e2a084e48b521635b91068fa5"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741399990186,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "userId",
+                    "value": "67cbac0e782d856dae205640"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_aba66dad221b466cba272255c6293f72",
+            "parentId": "fld_b7ee073ace934a75b7f57f30e011c497",
+            "modified": 1741401646605,
+            "created": 1741400129346,
+            "url": "http://localhost:3001/api/thoughts/:thoughtId/reactions",
+            "name": "Create Reaction",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"reactionBody\": \"😒\",\n  \"username\": \"lernantino\",\n  \"userId\": \"67cbabfd782d856dae20563a\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741400131371,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": "67cbad21782d856dae205654"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_b7ee073ace934a75b7f57f30e011c497",
+            "parentId": "wrk_7452b687e861408a9005f4e684ad802c",
+            "modified": 1741400125345,
+            "created": 1741400096656,
+            "name": "Reactions",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1741400096731,
+            "environmentType": "kv",
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_27d0328c95df4d828236d0b19d5c01dc",
+            "parentId": "fld_b7ee073ace934a75b7f57f30e011c497",
+            "modified": 1741401677239,
+            "created": 1741400131271,
+            "url": "http://localhost:3001/api/thoughts/:thoughtId/reactions/:reactionId",
+            "name": "Remove Reaction",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_81262a0237034777a005d831fbe9f7f5"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741400131271,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": "67cbad21782d856dae205654"
+                },
+                {
+                    "name": "reactionId",
+                    "value": "67cbae2f782d856dae205660"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_109065dc9ad94426a9a4e90e737fbf36",
+            "parentId": "fld_e348e6d7348c4527a4853230eb532e74",
+            "modified": 1741400909641,
+            "created": 1741400179451,
+            "url": "http://localhost:3001/api/thoughts",
+            "name": "Get all thoughts",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_a21d6448e05e4ef799a7066c240a2bb1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741400179651,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_e348e6d7348c4527a4853230eb532e74",
+            "parentId": "wrk_7452b687e861408a9005f4e684ad802c",
+            "modified": 1741400122579,
+            "created": 1741400116037,
+            "name": "Thoughts",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1741400096706,
+            "environmentType": "kv",
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_a88e1bfab98245869cedd120f1cd8098",
+            "parentId": "fld_e348e6d7348c4527a4853230eb532e74",
+            "modified": 1741401529851,
+            "created": 1741400176441,
+            "url": "http://localhost:3001/api/thoughts/:thoughtId",
+            "name": "Find thought by ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_59e36f8a9e6047259fae28b63218db31"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741400179601,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": "67cbada8782d856dae205659"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_05644f97df744c5a928be5a8864884ca",
+            "parentId": "fld_e348e6d7348c4527a4853230eb532e74",
+            "modified": 1741401511633,
+            "created": 1741400154674,
+            "url": "http://localhost:3001/api/thoughts",
+            "name": "Create thought",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"thoughtText\": \"Here's a cool thought...\",\n  \"username\": \"lernantino\",\n  \"userId\": \"67cbabfd782d856dae20563a\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741400179551,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_7bbe3a560ff4452ea9885af25a1ae178",
+            "parentId": "fld_e348e6d7348c4527a4853230eb532e74",
+            "modified": 1741401494542,
+            "created": 1741400715715,
+            "url": "http://localhost:3001/api/thoughts/:thoughtId",
+            "name": "Update thought",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"thoughtText\": \"On second thought, let me retract what I said...\",\n  \"username\": \"lernantino\",\n  \"userId\": \"67cbabfd782d856dae20563a\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741400176341,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": "67cbacfd782d856dae20564f"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_c5a63a2b3d734358bb288e23b260c21d",
+            "parentId": "fld_e348e6d7348c4527a4853230eb532e74",
+            "modified": 1741401535002,
+            "created": 1741400755986,
+            "url": "http://localhost:3001/api/thoughts/:thoughtId",
+            "name": "Delete thought",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.3.1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1741400176241,
+            "isPrivate": false,
+            "pathParameters": [
+                {
+                    "name": "thoughtId",
+                    "value": "67cbada8782d856dae205659"
+                }
+            ],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_847ef78adf2076114a01aaa77d15c3c87d2d0b00",
+            "parentId": "wrk_7452b687e861408a9005f4e684ad802c",
+            "modified": 1741399823501,
+            "created": 1741399823501,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1741399823501,
+            "environmentType": "kv",
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_847ef78adf2076114a01aaa77d15c3c87d2d0b00",
+            "parentId": "wrk_7452b687e861408a9005f4e684ad802c",
+            "modified": 1741399823503,
+            "created": 1741399823503,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
