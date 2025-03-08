@@ -57,7 +57,7 @@ export const deleteUser = async (req, res) => {
             res.status(404).json({ message: 'No user with that ID' });
         } else {
             await Thoughts.deleteMany({ _id: { $in: user.thoughts } });
-            res.json({ message: 'User and associated thoughts successfully deleted' });
+            res.json({ message: 'User and associated thoughts deleted' });
         }
     } catch (err) {
         res.status(500).json(err);

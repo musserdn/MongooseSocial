@@ -21,8 +21,8 @@ const reactionSchema = new Schema({
         get: formatTimestamp,
     },
 }, {
-    timestamps: true,
     _id: false,
+    versionKey: false,
     toJSON: {
         virtuals: true,
         getters: true,

@@ -20,14 +20,13 @@ const thoughtSchema = new Schema({
     },
     reactions: [reactionSchema],
 }, {
-    timestamps: true,
     toJSON: {
         virtuals: true,
         getters: true,
     },
 });
 
-thoughtSchema.virtual('reactionCount').get(function() {
+thoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 
